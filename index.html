@@ -1,390 +1,336 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>أسرار مكة لتسويق الفنادق</title>
 
-  <title>أسرار مكة لتسويق الفنادق | مكة المكرمة</title>
-
-  <meta
-    name="description"
-    content="أسرار مكة لتسويق الفنادق - مكة المكرمة. شاهد الصور والمعلومات واحجز الآن."
-  >
-
-  <link rel="stylesheet" href="style.css">
+<style>
+*{box-sizing:border-box}
+body{
+ margin:0;
+ font-family:Arial,Tahoma,sans-serif;
+ background:#f5f6f8;
+ color:#17202a
+}
+.hero{
+ min-height:430px;
+ padding:30px 20px;
+ display:flex;
+ align-items:end;
+ background:
+ linear-gradient(#0003,#000b),
+ url("https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1400&q=80")
+ center/cover
+}
+.hero-box{
+ width:100%;
+ max-width:900px;
+ margin:auto;
+ color:white
+}
+.badge{
+ display:inline-block;
+ padding:8px 14px;
+ background:#ffffff22;
+ border:1px solid #ffffff55;
+ border-radius:30px;
+ backdrop-filter:blur(8px)
+}
+h1{font-size:38px;margin:15px 0 8px}
+.hero p{font-size:18px;opacity:.9}
+.buttons{
+ display:flex;
+ gap:10px;
+ flex-wrap:wrap;
+ margin-top:20px
+}
+.btn{
+ border:0;
+ border-radius:14px;
+ padding:15px 22px;
+ font-size:16px;
+ font-weight:bold;
+ text-decoration:none;
+ cursor:pointer;
+ display:inline-block
+}
+.book{
+ background:#d92332;
+ color:white;
+ box-shadow:0 8px 25px #0004
+}
+.map{
+ background:white;
+ color:#17202a
+}
+.container{
+ max-width:950px;
+ margin:auto;
+ padding:25px 16px 60px
+}
+.card{
+ background:white;
+ border-radius:20px;
+ padding:22px;
+ margin:18px 0;
+ box-shadow:0 5px 25px #0000000d
+}
+.card h2{margin-top:0}
+.gallery{
+ display:grid;
+ grid-template-columns:repeat(2,1fr);
+ gap:10px
+}
+.gallery img{
+ width:100%;
+ height:190px;
+ object-fit:cover;
+ border-radius:15px
+}
+.buses{
+ display:grid;
+ grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+ gap:12px
+}
+.bus{
+ padding:18px;
+ border:1px solid #eee;
+ border-radius:16px
+}
+.bus strong{font-size:18px}
+.modal{
+ position:fixed;
+ inset:0;
+ background:#0009;
+ display:none;
+ align-items:center;
+ justify-content:center;
+ padding:15px;
+ z-index:10
+}
+.modal.show{display:flex}
+.form{
+ width:100%;
+ max-width:500px;
+ background:white;
+ border-radius:24px;
+ padding:25px;
+ max-height:92vh;
+ overflow:auto
+}
+input,select,textarea{
+ width:100%;
+ padding:14px;
+ margin:7px 0 14px;
+ border:1px solid #ddd;
+ border-radius:12px;
+ font-size:16px
+}
+textarea{min-height:90px}
+.submit{
+ width:100%;
+ background:#d92332;
+ color:white;
+ border:0;
+ padding:16px;
+ border-radius:14px;
+ font-size:17px;
+ font-weight:bold
+}
+.close{
+ float:left;
+ border:0;
+ background:#eee;
+ border-radius:50%;
+ width:36px;
+ height:36px;
+ cursor:pointer
+}
+.empty{
+ padding:20px;
+ text-align:center;
+ color:#777
+}
+footer{
+ text-align:center;
+ color:#777;
+ padding:25px
+}
+@media(max-width:600px){
+ h1{font-size:30px}
+ .hero{min-height:390px}
+ .gallery img{height:150px}
+ .btn{width:100%;text-align:center}
+}
+</style>
 </head>
 
 <body>
 
-  <!-- الهيدر -->
-  <header class="hero">
-
-    <nav class="navbar">
-      <div class="logo">
-        🕋 مناسك البيت
-      </div>
-
-      <a
-        class="map-button"
-        href="https://www.google.com/maps/search/?api=1&query=21.40645461,39.81794186"
-        target="_blank"
-      >
-        📍 الموقع
-      </a>
-    </nav>
-
-    <div class="hero-content">
-
-      <span class="location">مكة المكرمة</span>
-
-      <h1>أسرار مكة لتسويق الفنادق</h1>
-
-      <p>
-        تعرف على المكان، شاهد الصور، واكتشف معلومات الحجز
-        والموقع على الخريطة.
-      </p>
-
-      <div class="hero-buttons">
-
-        <a href="#booking" class="button main-button">
-          احجز الآن
-        </a>
-
-        <a
-          href="https://www.google.com/maps/search/?api=1&query=21.40645461,39.81794186"
-          target="_blank"
-          class="button second-button"
-        >
-          📍 افتح الخريطة
-        </a>
-
-      </div>
-
-    </div>
-
-  </header>
-
-
-  <!-- معلومات المكان -->
-  <section class="section">
-
-    <div class="section-title">
-
-      <span>عن المكان</span>
-
-      <h2>أسرار مكة لتسويق الفنادق</h2>
-
-    </div>
-
-    <p class="description">
-
-      مرحبًا بكم في أسرار مكة لتسويق الفنادق بمكة المكرمة.
-      من خلال هذه الصفحة يمكنك التعرف على المكان،
-      مشاهدة الصور، معرفة معلومات النقل، وإرسال طلب حجز.
-
-    </p>
-
-  </section>
-
-
-  <!-- الصور -->
-  <section class="section">
-
-    <div class="section-title">
-
-      <span>الصور</span>
-
-      <h2>شاهد المكان</h2>
-
-    </div>
-
-    <div class="gallery">
-
-      <img
-        src="images/hotel-1.jpg"
-        alt="أسرار مكة لتسويق الفنادق"
-      >
-
-      <img
-        src="images/hotel-2.jpg"
-        alt="صورة الفندق"
-      >
-
-      <img
-        src="images/hotel-3.jpg"
-        alt="صورة من الفندق"
-      >
-
-    </div>
-
-  </section>
-
-
-  <!-- معلومات -->
-  <section class="section">
-
-    <div class="section-title">
-
-      <span>المعلومات</span>
-
-      <h2>معلومات مهمة</h2>
-
-    </div>
-
-    <div class="cards">
-
-      <div class="card">
-
-        <div class="card-icon">📍</div>
-
-        <h3>الموقع</h3>
-
-        <p>
-          مكة المكرمة
-        </p>
-
-      </div>
-
-
-      <div class="card">
-
-        <div class="card-icon">🚌</div>
-
-        <h3>النقل</h3>
-
-        <p>
-          تتوفر خيارات للباصات ويمكن اختيار الباص أثناء الحجز.
-        </p>
-
-      </div>
-
-
-      <div class="card">
-
-        <div class="card-icon">📞</div>
-
-        <h3>الحجز</h3>
-
-        <p>
-          أرسل بيانات الحجز وسيتم التواصل معك.
-        </p>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- الباصات -->
-  <section class="section">
-
-    <div class="section-title">
-
-      <span>النقل</span>
-
-      <h2>الباصات</h2>
-
-    </div>
-
-    <div class="cards">
-
-      <div class="card bus-card">
-
-        <div class="card-icon">🚌</div>
-
-        <h3>الباص الأول</h3>
-
-        <p>
-          اكتب هنا تفاصيل الباص ومواعيده.
-        </p>
-
-      </div>
-
-
-      <div class="card bus-card">
-
-        <div class="card-icon">🚌</div>
-
-        <h3>الباص الثاني</h3>
-
-        <p>
-          اكتب هنا تفاصيل الباص ومواعيده.
-        </p>
-
-      </div>
-
-
-      <div class="card bus-card">
-
-        <div class="card-icon">🚌</div>
-
-        <h3>الباص الثالث</h3>
-
-        <p>
-          اكتب هنا تفاصيل الباص ومواعيده.
-        </p>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- الحجز -->
-  <section class="section booking-section" id="booking">
-
-    <div class="booking-title">
-
-      <span>الحجز</span>
-
-      <h2>احجز الآن</h2>
-
-      <p>
-        املأ البيانات التالية لإرسال طلب الحجز.
-      </p>
-
-    </div>
-
-
-    <form id="bookingForm" class="booking-form">
-
-      <label>
-        الاسم الكامل
-
-        <input
-          type="text"
-          id="name"
-          placeholder="اكتب اسمك"
-          required
-        >
-
-      </label>
-
-
-      <label>
-        عدد الأشخاص
-
-        <input
-          type="number"
-          id="count"
-          min="1"
-          placeholder="مثال: 4"
-          required
-        >
-
-      </label>
-
-
-      <label>
-        اختيار الباص
-
-        <select id="bus">
-
-          <option value="لم يتم التحديد">
-            لم يتم التحديد
-          </option>
-
-          <option value="الباص الأول">
-            الباص الأول
-          </option>
-
-          <option value="الباص الثاني">
-            الباص الثاني
-          </option>
-
-          <option value="الباص الثالث">
-            الباص الثالث
-          </option>
-
-        </select>
-
-      </label>
-
-
-      <label>
-        رقم الهاتف
-
-        <input
-          type="tel"
-          id="phone"
-          placeholder="01xxxxxxxxx"
-          required
-        >
-
-      </label>
-
-
-      <label>
-        ملاحظات
-
-        <textarea
-          id="notes"
-          rows="4"
-          placeholder="اكتب أي ملاحظات..."
-        ></textarea>
-
-      </label>
-
-
-      <button
-        type="submit"
-        class="button main-button booking-button"
-      >
-        📱 إرسال طلب الحجز
-      </button>
-
-      <p id="message"></p>
-
-    </form>
-
-  </section>
-
-
-  <!-- الخريطة -->
-  <section class="section map-section">
-
-    <div class="map-box">
-
-      <span>الموقع</span>
-
-      <h2>
-        موقع أسرار مكة لتسويق الفنادق
-      </h2>
-
-      <p>
-        يمكنك فتح الموقع مباشرة على Google Maps.
-      </p>
-
-      <a
-        href="https://www.google.com/maps/search/?api=1&query=21.40645461,39.81794186"
-        target="_blank"
-        class="button main-button"
-      >
-        📍 فتح الموقع على الخريطة
-      </a>
-
-    </div>
-
-  </section>
-
-
-  <!-- الفوتر -->
-  <footer>
-
-    <strong>
-      🕋 أسرار مكة لتسويق الفنادق
-    </strong>
-
-    <p>
-      مكة المكرمة
-    </p>
-
-  </footer>
-
-
-  <script src="script.js"></script>
+<section class="hero">
+ <div class="hero-box">
+   <span class="badge">🏨 مرحبًا بكم</span>
+   <h1 id="hotelName">أسرار مكة لتسويق الفنادق</h1>
+   <p id="hotelDescription">...</p>
+
+   <div class="buttons">
+     <button class="btn book" onclick="openBooking()">🔴 احجز الآن</button>
+     <a id="mapBtn" class="btn map" target="_blank">📍 الموقع على الخريطة</a>
+   </div>
+ </div>
+</section>
+
+<main class="container">
+
+ <section class="card">
+   <h2>📸 صور الفندق</h2>
+   <div id="gallery" class="gallery"></div>
+ </section>
+
+ <section class="card">
+   <h2>🚌 الباصات</h2>
+   <div id="buses" class="buses"></div>
+ </section>
+
+ <section class="card">
+   <h2>📞 معلومات التواصل</h2>
+   <p id="phone"></p>
+ </section>
+
+</main>
+
+<footer>
+ أسرار مكة لتسويق الفنادق
+</footer>
+
+<div id="modal" class="modal">
+ <div class="form">
+   <button class="close" onclick="closeBooking()">×</button>
+   <h2>📝 طلب حجز</h2>
+   <p>اكتب بياناتك وسيتم استقبال طلب الحجز.</p>
+
+   <form id="bookingForm">
+
+    <label>الاسم</label>
+    <input name="name" required placeholder="اكتب اسمك">
+
+    <label>عدد الأشخاص</label>
+    <input name="count" type="number" min="1" required placeholder="مثال: 4">
+
+    <label>الباص</label>
+    <select name="bus" id="busSelect">
+      <option value="">اختر الباص</option>
+    </select>
+
+    <label>رقم الهاتف</label>
+    <input name="phone" type="tel" required placeholder="رقم الهاتف">
+
+    <label>ملاحظات</label>
+    <textarea name="notes" placeholder="أي ملاحظات للحجز"></textarea>
+
+    <button class="submit">✅ تأكيد طلب الحجز</button>
+
+   </form>
+ </div>
+</div>
+
+<script>
+let site;
+
+async function loadSite(){
+ const res = await fetch("./data.json");
+ site = await res.json();
+
+ document.getElementById("hotelName").textContent =
+   site.hotel.name || "أسرار مكة لتسويق الفنادق";
+
+ document.getElementById("hotelDescription").textContent =
+   site.hotel.description || "";
+
+ document.getElementById("mapBtn").href =
+   site.hotel.mapUrl || "#";
+
+ document.getElementById("phone").textContent =
+   site.hotel.phone ? "📞 " + site.hotel.phone : "للتواصل والحجز يرجى استخدام نموذج الحجز.";
+
+ const gallery = document.getElementById("gallery");
+
+ if(!site.images.length){
+   gallery.innerHTML = `<div class="empty">سيتم إضافة صور الفندق قريبًا.</div>`;
+ }else{
+   gallery.innerHTML = site.images.map(img =>
+     `<img src="${img.url}" alt="صورة الفندق">`
+   ).join("");
+ }
+
+ const buses = document.getElementById("buses");
+ const select = document.getElementById("busSelect");
+
+ if(!site.buses.length){
+   buses.innerHTML = `<div class="empty">لم تتم إضافة الباصات بعد.</div>`;
+ }else{
+   buses.innerHTML = site.buses.map(bus => `
+     <div class="bus">
+       <strong>🚌 ${escapeHtml(bus.name)}</strong>
+       <p>${escapeHtml(bus.description)}</p>
+       ${bus.capacity ? `<small>السعة: ${escapeHtml(bus.capacity)}</small>` : ""}
+     </div>
+   `).join("");
+
+   select.innerHTML =
+     `<option value="">اختر الباص</option>` +
+     site.buses.map(bus =>
+       `<option value="${escapeAttr(bus.name)}">${escapeHtml(bus.name)}</option>`
+     ).join("");
+ }
+}
+
+function openBooking(){
+ document.getElementById("modal").classList.add("show");
+}
+
+function closeBooking(){
+ document.getElementById("modal").classList.remove("show");
+}
+
+document.getElementById("bookingForm").addEventListener("submit", async e=>{
+ e.preventDefault();
+
+ const data = Object.fromEntries(new FormData(e.target));
+
+ const res = await fetch("/api/booking",{
+   method:"POST",
+   headers:{"Content-Type":"application/json"},
+   body:JSON.stringify(data)
+ });
+
+ const result = await res.json();
+
+ if(result.success){
+   alert("✅ تم إرسال طلب الحجز بنجاح");
+   e.target.reset();
+   closeBooking();
+ }else{
+   alert("❌ " + result.message);
+ }
+});
+
+function escapeHtml(s){
+ return String(s || "")
+  .replaceAll("&","&amp;")
+  .replaceAll("<","&lt;")
+  .replaceAll(">","&gt;")
+  .replaceAll('"',"&quot;")
+  .replaceAll("'","&#039;");
+}
+
+function escapeAttr(s){
+ return escapeHtml(s);
+}
+
+loadSite();
+</script>
 
 </body>
 </html>

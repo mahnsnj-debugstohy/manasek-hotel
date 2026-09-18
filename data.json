@@ -1,0 +1,48 @@
+{
+  "hotel": {
+    "name": "",
+    "description": "مرحبًا بكم في فنادق مكه المكرمة ",
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=21.40645461,39.81794186",
+    "phone": "0564173694",
+    "whatsapp": "0564173694"
+  },
+  "images": [
+    {
+      "id": "1789732321116eyumqsj8ljw",
+      "url": "./uploads/1789732318603-zwdvco.jpg",
+      "name": "1000142610.jpg"
+    },
+    {
+      "id": "1789732321116yesoxwg66k",
+      "url": "./uploads/1789732319436-i9x7b5.jpg",
+      "name": "1000142611.jpg"
+    },
+    {
+      "id": "17897323211166crmx90khql",
+      "url": "./uploads/1789732319443-amc4pr.jpg",
+      "name": "1000142612.jpg"
+    },
+    {
+      "id": "17897323211163gxkhqegc8e",
+      "url": "./uploads/1789732319457-e9jffe.jpg",
+      "name": "1000142609.jpg"
+    },
+    {
+      "id": "1789732321116z6egy3lduje",
+      "url": "./uploads/1789732320582-8ezxq7.jpg",
+      "name": "1000145940.jpg"
+    }
+  ],
+  "buses": [],
+  "bookings": [
+    {
+      "id": "1789711410932",
+      "name": "سطوحي",
+      "count": "3",
+      "bus": "مكهات",
+      "phone": "01121534438",
+      "notes": "",
+      "createdAt": "2026-09-18T06:03:30.932Z"
+    }
+  ]
+}
